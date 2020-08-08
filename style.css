@@ -1,0 +1,91 @@
+/*GLOBAL STYLES*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%
+}
+html,body{
+    font-family: 'Poppins', sans-serif;
+}
+ 
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+label,input,a,button{
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*NAV AND HERO*/
+.main-head{
+    background-color: #14465a;
+    min-height: 10vh;
+    padding:2rem;
+    color:white;
+}
+
+nav{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    
+}
+
+
+nav ul{
+    list-style: none;
+    display:flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+#logo{
+    flex: 1 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: normal;
+}
+
+.hero{
+    min-height: 90vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.726)) ,url('./img/pexels-vincent-rivaud-2265876.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h3{
+    padding:3rem;
+    font-weight: normal;
+}
+
+.hero button{
+    padding: 2rem 4rem;
+    background-color: #3b819c;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
