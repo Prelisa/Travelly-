@@ -1,91 +1,303 @@
 /*GLOBAL STYLES*/
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%
+html {
+  font-size: 62.5%;
 }
-html,body{
-    font-family: 'Poppins', sans-serif;
-}
- 
-h1{
-    font-size: 2.6rem;
-}
-h2{
-    font-size: 4rem;
+html,
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-h3{
-    font-size: 2.5rem;
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 4rem;
 }
 
-label,input,a,button{
-    font-size: 2rem;
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 2.1rem;
+}
+h5{
+  font-size: 1.5rem;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    
+label,
+input,
+p,
+a,
+button {
+  font-size: 2rem;
 }
 
-
-/*NAV AND HERO*/
-.main-head{
-    background-color: #14465a;
-    min-height: 10vh;
-    padding:2rem;
-    color:white;
+a {
+  text-decoration: none;
+  color: white;
 }
-
-nav{
-    display: flex;
-    width: 90%;
-    margin:auto;
-    
-}
-
-
-nav ul{
-    list-style: none;
-    display:flex;
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-
-#logo{
-    flex: 1 1 40rem;
-    font-family: 'Pattaya', sans-serif;
-    font-weight: normal;
-}
-
-.hero{
-    min-height: 90vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.726)) ,url('./img/pexels-vincent-rivaud-2265876.jpg');
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.hero h3{
-    padding:3rem;
-    font-weight: normal;
-}
-
-.hero button{
+button {
     padding: 2rem 4rem;
-    background-color: #3b819c;
-    border:none;
+    background-color: #3b9790;
+    border: none;
     color: white;
     cursor: pointer;
+  }
+  button:hover{
+      background-color: #35706b;
+  }
+  
+/*NAV AND HERO*/
+.main-head {
+  background-color: #337c99;
+  min-height: 10vh;
+  padding: 2rem;
+  color: white;
+  
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)),
+    url("./img/pexels-vincent-rivaud-2265876.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 3rem;
+  font-weight: normal;
+}
+
+
+/*LOCATION SECTION*/
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.226)),
+    url("./img/skyline-newyork.png");
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  text-decoration: underline;
+  padding: 1rem 0;
+}
+.locations-head h3 {
+  padding: 4rem 0;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 40%;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-1 {
+  right: 10%;
+}
+.moving-cloud-2 {
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, 10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*Benefits section*/
+
+.benefits-head {
+  min-height: 25vh;
+  background: #147a94;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.benefits-head h2{
+  padding: 3rem;
+}
+
+.cards {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card {
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  flex: 1 1 20rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 80px;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.card h4,
+.card p {
+  padding: 2rem;
+}
+
+.card-icon {
+  background:#3b9790;
+}
+
+/*Contact Form*/
+#contact-form{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),transparent), url(./img/pexels-zhaocan-li-1755243.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper{
+    background: rgba(21, 27, 44, 0.8);
+    width: 50%;
+    color: white;
+    border-radius: 2rem;
+}
+.form-head{
+    text-align: center;
+    padding:4rem 0;
+}
+
+.name-form,.email-form{
+    text-align: center;
+    margin: 3.5rem 0;
+}
+
+.form-wrapper label{
+    margin: 0 2rem;
+}
+.form-wrapper input{
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    border:none;
+}
+
+.form-wrapper button{
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 5rem;
+}
+
+footer{
+  min-height: 10vh;
+  background-color: #337c99 ;
+}
+
+footer img{
+  width:2rem;
+  color:white;
+}
+
+.footer-wrapper{
+ display: flex;
+ width: 90%;
+ margin:auto;
+ padding:3rem;
+ flex-wrap: wrap;
+}
+.footer-wrapper h5{
+  flex: 1 1 40rem;
+}
+.footer-wrapper ul{
+  display: flex;
+  flex:1 1 40rem;
+  list-style: none;
+  justify-content: space-around;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    margin-left: 1rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving.cloud-2 {
+    z-index: -2;
+  }
+  footer{
+    text-align: center;
+    
+  }
+  footer h5{
+    padding-bottom:3rem;
+  }
 }
