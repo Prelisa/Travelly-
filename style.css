@@ -55,7 +55,7 @@ button {
   
 /*NAV AND HERO*/
 .main-head {
-  background-color: #337c99;
+  background-color: #25576b;
   min-height: 10vh;
   padding: 2rem;
   color: white;
@@ -152,7 +152,7 @@ nav ul {
 
 .benefits-head {
   min-height: 25vh;
-  background: #147a94;
+  background: #25576b;
   display: flex;
   flex-direction: column;
   color: white;
@@ -190,7 +190,7 @@ nav ul {
 }
 
 .card-icon {
-  background:#3b9790;
+  background:#25576b;
 }
 
 /*Contact Form*/
@@ -239,12 +239,13 @@ nav ul {
 
 footer{
   min-height: 10vh;
-  background-color: #337c99 ;
+  background-color: #25576b ;
+  color:white;
 }
 
 footer img{
   width:2rem;
-  color:white;
+  
 }
 
 .footer-wrapper{
